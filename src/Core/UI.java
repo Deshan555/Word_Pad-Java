@@ -13,6 +13,7 @@ import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
 import javafx.beans.value.ChangeListener;
+import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 
@@ -28,7 +29,10 @@ public class UI extends javax.swing.JFrame {
     
     public UI() 
     {
+        
         initComponents();
+        
+        setIconImage(new ImageIcon(getClass().getResource("/Pic/pages_64px.png")).getImage());
     }
 
     /**
