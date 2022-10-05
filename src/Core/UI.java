@@ -516,9 +516,7 @@ public class UI extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         
         String text = display.getSelectedText();
-        
-        text.replaceAll(" ", "+");
-        
+                
         String URL = "https://translate.google.lk/?hl=en&tab=rT&sl=auto&tl=si&text="+text+"&op=translate";
         
         try
