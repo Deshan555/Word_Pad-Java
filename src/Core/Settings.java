@@ -81,6 +81,8 @@ public class Settings extends javax.swing.JFrame implements ActionListener{
 
         theams.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
         theams.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dracula", "White", "Pure White", "Dark" }));
+        theams.setBorder(null);
+        theams.setFocusable(false);
         theams.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 theamsActionPerformed(evt);
@@ -90,10 +92,15 @@ public class Settings extends javax.swing.JFrame implements ActionListener{
 
         size.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
         size.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "12", "14", "16", "18", "20", "22", "24", "26", "28", "30" }));
+        size.setBorder(null);
+        size.setFocusable(false);
         getContentPane().add(size, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 74, 232, 43));
 
         jButton1.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
         jButton1.setText("Apply");
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -103,6 +110,8 @@ public class Settings extends javax.swing.JFrame implements ActionListener{
 
         fontbox.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
         fontbox.setModel(new javax.swing.DefaultComboBoxModel<>(fonts_));
+        fontbox.setBorder(null);
+        fontbox.setFocusable(false);
         getContentPane().add(fontbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 145, 232, 43));
 
         jLabel5.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
@@ -112,6 +121,8 @@ public class Settings extends javax.swing.JFrame implements ActionListener{
 
         format.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
         format.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Plain", "Bold", "plain and Ithalic", "Ithalic and Bold" }));
+        format.setBorder(null);
+        format.setFocusable(false);
         format.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 formatActionPerformed(evt);
