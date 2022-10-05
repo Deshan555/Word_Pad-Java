@@ -189,7 +189,7 @@ public class UI extends javax.swing.JFrame {
         menu.add(jMenuItem9);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Text Editor");
+        setTitle("Word Pad");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

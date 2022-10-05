@@ -11,6 +11,7 @@ import java.awt.Font;
 import java.awt.GraphicsEnvironment;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -30,6 +31,8 @@ public class Settings extends javax.swing.JFrame implements ActionListener{
         fontbox.setSelectedItem("Yu Gothic UI Semilight");
         
         format.setSelectedItem("FONT.PLAIN");
+        
+        setIconImage(new ImageIcon(getClass().getResource("/Pic/settings_64px.png")).getImage());
     }
 
     /**
@@ -54,6 +57,7 @@ public class Settings extends javax.swing.JFrame implements ActionListener{
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Settings");
         setForeground(new java.awt.Color(0, 0, 0));
         setMinimumSize(new java.awt.Dimension(436, 483));
         setResizable(false);
@@ -150,10 +154,14 @@ public class Settings extends javax.swing.JFrame implements ActionListener{
         if(theam.equals("White"))
         {
             UI.display.setBackground(new java.awt.Color(204, 204, 204));
+            
+            UI.display.setForeground(Color.BLACK);
         }
         if(theam.equals("Pure White"))
         {
             UI.display.setBackground(new java.awt.Color(255, 255, 255));
+            
+            UI.display.setForeground(Color.BLACK);
         }
         if(theam.equals("Dark"))
         {

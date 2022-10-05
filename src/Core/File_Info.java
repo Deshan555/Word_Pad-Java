@@ -5,6 +5,8 @@
  */
 package Core;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Jayashanka Deshan
@@ -42,6 +44,8 @@ public class File_Info extends javax.swing.JFrame {
     private File_Info() 
     {
         initComponents();
+        
+        setIconImage(new ImageIcon(getClass().getResource("/Pic/info_64px.png")).getImage());
         
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

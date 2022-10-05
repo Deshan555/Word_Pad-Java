@@ -12,6 +12,7 @@ import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileOutputStream;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -26,6 +27,8 @@ public class Pdf_Genarator extends javax.swing.JFrame {
     public Pdf_Genarator() 
     {
         initComponents();
+        
+        setIconImage(new ImageIcon(getClass().getResource("/Pic/adobe_acrobat_reader_64px.png")).getImage());
     }
 
     /**
@@ -51,6 +54,7 @@ public class Pdf_Genarator extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Direct PDF");
         setMinimumSize(new java.awt.Dimension(377, 558));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
