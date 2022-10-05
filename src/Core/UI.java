@@ -517,6 +517,8 @@ public class UI extends javax.swing.JFrame {
         
         String text = display.getSelectedText();
         
+        text.replaceAll(" ", "+");
+        
         String URL = "https://translate.google.lk/?hl=en&tab=rT&sl=auto&tl=si&text="+text+"&op=translate";
         
         try
